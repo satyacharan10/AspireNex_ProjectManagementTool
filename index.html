@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Project Management Tool</h1>
+    </header>
+    
+    <main>
+        <section id="project-creation">
+            <h2>Create Project</h2>
+            <form id="project-form">
+                <input type="text" id="project-name" placeholder="Project Name" required>
+                <button type="submit">Create Project</button>
+            </form>
+        </section>
+
+        <section id="task-creation" class="hidden">
+            <h2>Assign Tasks</h2>
+            <form id="task-form">
+                <input type="text" id="task-name" placeholder="Task Name" required>
+                <input type="date" id="task-deadline" required>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <section id="project-list">
+            <h2>Projects</h2>
+            <div id="projects"></div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
